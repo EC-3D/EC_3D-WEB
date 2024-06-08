@@ -1,0 +1,88 @@
+body {
+    font-family: sans-serif;
+}
+
+.prices{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5%;
+    background-color: beige;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.image_plan{
+    display: block;
+    object-fit: cover;
+}
+
+.image_plan png{
+    order: 1;
+    flex-grow: 1;
+    padding: 5px;
+    width: 50%;
+    height: 50%;
+}
+
+.content_plan{
+    order: 2;
+    flex-grow: 1;
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+    background-color: #4e879d;
+}
+
+.plan1, .plan2, .plan3{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction:row;
+    background-color:rgb(228, 214, 195);
+    border: 1px solid #053bff;  
+    padding: 2%;
+    width: 100%;
+    height: 100%;
+    float: left;
+    text-align:justify;
+}
+
+.encabezado {
+    padding-top: 2px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background: linear-gradient(to right, #053bff, #d0f2ff23);
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    color: rgb(213, 230, 234);
+}
+
+.social_media{
+    display: flex;
+}
+
+.ig {
+    background-image: url(images/instagram.png);
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    margin-inline: 5px;
+}
+
+.at {
+    background-image: url(images/artstation.png);
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    margin-inline: 5px;
+}
+
+.yt {
+    background-image: url(images/youtube.png);
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    margin-inline: 5px;
+}
