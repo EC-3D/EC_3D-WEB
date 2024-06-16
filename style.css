@@ -1,66 +1,155 @@
 body {
     font-family: sans-serif;
+    background: linear-gradient(to bottom, rgb(65, 65, 65) 0%, rgb(0, 0, 0) 100%);
+}
+
+.logo {
+    background-image: url(images/EC_3D.png);
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;   
+}
+
+h1 {
+    margin: 8px;
+}
+
+.presentacion {
+    height: 600px;
+    width: 90%;
+    font-size: 20px;
+    padding: 15px;
+    color: rgb(228, 237, 239);
+    background-color: #7d9195;
+    margin-top: 5px;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction:column;
+    text-align: center;
+    align-items: center;
+}
+
+.encabezado {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction:column;
+    text-align: center;
+}
+
+.intro {
+    margin-top: 20px;
+}
+
+.slogan, .mision, .vision {
+    font-size: 15px;
+    color: rgb(223, 255, 254);
+    margin: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(242, 242, 242, 0.155);
 }
 
 .prices{
     display: flex;
     flex-flow: row wrap;
     padding: 5%;
-    background-color: beige;
-    flex-direction: column;
+    background-color: transparent;
+    flex-direction:row;
     align-content: center;
     justify-content: center;
 }
 
-.image_plan{
-    display: block;
-    object-fit: cover;
+.img_lp{
+    height: 270px;
+    width: 500px;
+    background-image: url(images/low\ poly.png);
+    order: 2;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;   
+    border-radius: 15px;
 }
 
-.image_plan png{
-    order: 1;
+
+.img_co{
+    height: 270px;
+    width: 500px;
+    background-image: url(images/lamp.png);
+    order: 2;
     flex-grow: 1;
-    padding: 5px;
-    width: 50%;
-    height: 50%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
 }
+
+.img_hp{
+    height: 270px;
+    width: 500px;
+    background-image: url(images/project\ complex.png);
+    order: 2;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
 
 .content_plan{
     order: 2;
     flex-grow: 1;
     width: 50%;
-    height: 50%;
+    height: 40%;
     padding: 20px;
-    background-color: #4e879d;
+    background-color: #ffffff00;
 }
 
 .plan1, .plan2, .plan3{
     display: flex;
     flex-flow: row wrap;
     align-content: center;
+    align-items: center;
     justify-content: center;
     flex-direction:row;
-    background-color:rgb(228, 214, 195);
-    border: 1px solid #053bff;  
-    padding: 2%;
-    width: 100%;
-    height: 100%;
     float: left;
-    text-align:justify;
+    text-align:left;
+    color: #202324;
+    background-color: #6e7c80;
+    padding: 2%;
+    width: 80%;
+    height: 70%;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 0px rgba(255,255,255,1);
 }
 
-.encabezado {
-    padding-top: 2px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    background: linear-gradient(to right, #053bff, #d0f2ff23);
-    border-bottom-left-radius: 25px;
-    border-top-left-radius: 25px;
-    color: rgb(213, 230, 234);
+.money {
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgba(167, 167, 167, 0.5);
+    border-radius: 20px;
+    border: 2px solid;
+    border-color: rgb(255, 255, 255);
+    text-align: center;
 }
+
 
 .social_media{
     display: flex;
+    background-color: #919191;
+    padding: 15px;
+    border-radius: 15px;
 }
 
 .ig {
@@ -85,4 +174,13 @@ body {
     width: 40px;
     height: 40px;
     margin-inline: 5px;
+}
+
+.ig, .yt, .at {
+    transition: 100ms;
+}
+
+.ig:hover, .at:hover, .yt:hover {
+    scale:1.2;
+    transition: 100ms;
 }
